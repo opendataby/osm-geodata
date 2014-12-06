@@ -1,6 +1,13 @@
 # IDE files
 .idea/
 
+
+# data files
+*.csv
+*.json
+*.xml
+*.html
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
