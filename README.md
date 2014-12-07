@@ -16,10 +16,25 @@
 
 ## Reqirements
 
-- postgres + postgis
-- osm2pgsql
+- postgres: https://wiki.postgresql.org/wiki/Detailed_installation_guides
+- postgis: http://postgis.net/install/
+- osm2pgsql: http://wiki.openstreetmap.org/wiki/Osm2pgsql#Installation
 - Belarus osm dump: http://gis-lab.info/projects/osm_dump/
 - loaded osm data to postgis with osm2pgsql
+
+
+## Database configuration
+
+    createdb osm
+
+    psql osm -c "CREATE EXTENSION hstore"
+    psql osm -c "CREATE EXTENSION postgis"
+    psql osm -c "CREATE EXTENSION postgis_topology"
+
+    psql osm -c "CREATE LANGUAGE plpythonu"
+
+    psql -f _first_aggregation_functions.sql osm
+    psql -f _voronoi-py.sql
 
 ## osm2pgsql usage
 
