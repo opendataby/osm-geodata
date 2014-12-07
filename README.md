@@ -34,7 +34,7 @@
     psql osm -c "CREATE LANGUAGE plpythonu"
 
     psql -f _first_aggregation_functions.sql osm
-    psql -f _voronoi-py.sql
+    psql -f _voronoi-py.sql osm
 
 ## osm2pgsql usage
 
