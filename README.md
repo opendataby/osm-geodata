@@ -44,3 +44,8 @@
 
 - FIRST aggregation function: https://wiki.postgresql.org/wiki/First/last_%28aggregate%29
 - voronoi division function
+
+## Common constants
+
+- osm_polygon -59065 or r59065: Belarus country
+- osm_polygon -59195 or r59195: Minsk city
